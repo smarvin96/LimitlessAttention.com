@@ -17,7 +17,14 @@ const Hero = () => {
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <img src="/src/images/girl_beach.jpg" alt="girl on beach"/>
-        </div>                
+            <div class=" hidden md:block absolute right-[210px] top-20 p-2 bg-pink-200 rounded-lg bg-opacity-70">
+				<img class="w-8 h-8 rounded-full inline-block mr-2 astro-UXNKDZ4E" alt="profile picture" width="36" height="36" src="/src/images/t1.jpeg" loading="lazy" decoding="async"/>
+
+				<span>10/10. Just amazing</span>
+			</div>  
+            
+        </div>             
+         
     </div>
 </section>
     </> );
