@@ -1,6 +1,15 @@
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+
 const MainPage = () => {
     return ( <>
-    <h1>MainPage</h1></> );
+
+        <Header/>
+
+        <Footer/>
+
+    </> );
 }
  
 export default MainPage;
