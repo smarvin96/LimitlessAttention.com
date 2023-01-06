@@ -1,8 +1,13 @@
+import Header from "../components/Header"
+
 const NotFoundPage = () => {
   return (
-    <>
-      <h1>NotFoundPage</h1>
-    </>
+    
+      <>
+      <Header/>
+      <Footer/>
+      </>
+    
   );
 };
 

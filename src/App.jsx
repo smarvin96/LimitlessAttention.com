@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes } from "react-router-dom";
+import Apply from "./components/Apply";
 import Benefits from "./components/Benefits";
 import Contact from "./components/Contact";
 import Faqs from "./components/Faqs";
@@ -24,13 +25,14 @@ const App = () => {
 
 
   
-  <Header/>
-  <Hero/>
-  <Benefits/>
-  <Testimonials/>
-  <Contact/>
-  <Faqs/>
-  <Footer/>
+  {/* <Header/> */}
+  <Apply/>
+  {/* <Hero/> */}
+  {/* <Benefits/> */}
+  {/* <Testimonials/> */}
+  {/* <Contact/> */}
+  {/* <Faqs/> */}
+  {/* <Footer/> */}
 
   </> );
 }
