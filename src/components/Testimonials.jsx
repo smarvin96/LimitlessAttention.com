@@ -1,6 +1,6 @@
 const Testimonials = () => {
     return ( <>
-    <section class="bg-white dark:bg-gray-900" id="testimonials">
+    <section class="bg-white dark:bg-gray-900 py-8" id="testimonials">
 	<div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
 		<div class="mx-auto max-w-screen-sm">
 			<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Testimonials</h2>
