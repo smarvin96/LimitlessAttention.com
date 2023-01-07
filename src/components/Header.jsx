@@ -9,13 +9,13 @@ const Header = () => {
 <nav class=" header-nav fixed w-full z-40 bg-white  sm:px-4  dark:bg-gray-900 border-b border-gray-200 dark:border-gray-600 shadow-lg">
   <div class="container flex flex-wrap items-center justify-between mx-auto">
   <a href="https://flowbite.com/" class="flex items-center">
-      <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo"/>
-      <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">onlyfanserfolg.de</span>
+      {/* <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo"/> */}
+      <span class="p-2 self-center text-xl font-semibold whitespace-nowrap dark:text-white">onlyfanserfolg.de</span>
   </a>
   <div class="flex md:order-2">
 
 
-      <button type="button" class=" text-lg text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Apply now</button>
+      <button type="button" class="mt-2 mb-2 text-lg text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Apply now</button>
 
 
       

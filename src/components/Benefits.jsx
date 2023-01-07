@@ -1,7 +1,7 @@
 const Benefits = () => {
     return ( <>
-    <section class="bg-white dark:bg-gray-900 py-8" id="benefits">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    <section class="bg-white dark:bg-gray-900 py-8 " id="benefits">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 mt-10">
         <div class="max-w-screen-md mb-8 lg:mb-16">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Struggling to grow your OF?</h2>
             <p class=" text-lg text-gray-700 sm:text-xl dark:text-gray-400">Take advantage of our expert's years of experience to launch you in to the highest earners on Onlyfans 🚀</p>
