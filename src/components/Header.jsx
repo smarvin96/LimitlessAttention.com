@@ -2,11 +2,12 @@ const Header = () => {
     return ( <>
 
     
+<div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
     
 <nav class=" bg-white px-2 sm:px-4 py-1 dark:bg-gray-900 fixed w-full z-20 top-0 border-b border-gray-200 dark:border-gray-600">
   <div class="container flex flex-wrap items-center justify-between mx-auto">
   <a href="https://flowbite.com/" class="flex items-center">
-      {/* <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo"/> */}
+      <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo"/>
       <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">onlyfanserfolg.de</span>
   </a>
   <div class="flex md:order-2">
@@ -41,6 +42,7 @@ const Header = () => {
   </div>
   </div>
 </nav>
+</div>
 
 
 	

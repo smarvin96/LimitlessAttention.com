@@ -1,7 +1,9 @@
 const Footer = () => {
   return (
     <>
+    
       <footer class="p-4 bg-white sm:p-6 dark:bg-gray-800">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
           {/* <!-- Modal toggle --> */}
@@ -161,6 +163,8 @@ const Footer = () => {
             </a>
           </div>          
         </div>
+        </div>
+
       </footer>
     </>
   );
