@@ -1,7 +1,8 @@
 const Contact = () => {
     return ( <>
 
-<div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 mt-10" id="contact">
+<div id="contact" class="mb-10"><br /> </div>
+<div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 mt-10">
 
       
 <h1 class=" text-center mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Contact</h1>
