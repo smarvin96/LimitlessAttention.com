@@ -2,9 +2,11 @@ const Header = () => {
     return ( <>
 
     
-<div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+{/* <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 transition duration-300 ease-in-out"> */}
     
-<nav class=" bg-white px-2 sm:px-4 py-1 dark:bg-gray-900  w-full z-20 top-0 border-b border-gray-200 dark:border-gray-600">
+{/* header-nav fixed w-full z-40 md:bg-opacity-90 transition duration-300 ease-in-out  backdrop-blur-sm border-gray-200 dark:bg-gray-800 px-4 lg:px-6 py-2.5 shadow-lg */}
+
+<nav class=" header-nav fixed w-full z-40 bg-white  sm:px-4  dark:bg-gray-900 border-b border-gray-200 dark:border-gray-600 shadow-lg">
   <div class="container flex flex-wrap items-center justify-between mx-auto">
   <a href="https://flowbite.com/" class="flex items-center">
       <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo"/>
@@ -42,7 +44,7 @@ const Header = () => {
   </div>
   </div>
 </nav>
-</div>
+{/* </div> */}
 
 
 	
