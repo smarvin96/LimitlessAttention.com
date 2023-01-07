@@ -1,15 +1,18 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-
 const MainPage = () => {
-    return ( <>
+  return (
+    <>
+      <Header />
+      <Hero />
+      <Benefits />
+      <Testimonials />
+      <Contact />
+      <Faqs />
+      <Footer />
+    </>
+  );
+};
 
-        <Header/>
-
-        <Footer/>
-
-    </> );
-}
- 
 export default MainPage;
