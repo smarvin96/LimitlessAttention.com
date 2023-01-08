@@ -4,8 +4,9 @@ import Benefits from "./components/Benefits";
 import Contact from "./components/Contact";
 import Faqs from "./components/Faqs";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Header from "./components/Header";
+
 import Testimonials from "./components/Testimonials";
 import ApplyPage from "./pages/ApplyPage";
 import MainPage from "./pages/MainPage";
@@ -19,14 +20,15 @@ const App = () => {
 
 
 
-  <Apply/> 
-   {/* <Header/> */}
-   {/* <Hero/> */}
-  {/* <Benefits/> */}
-  {/* <Testimonials/> */}
-  {/* <Contact/> */}
-  {/* <Faqs/>  */}
-   {/* <Footer/>  */}
+  {/* <Apply/>  */}
+
+    <Header/>
+   <Hero/>
+  <Benefits/>
+  <Testimonials/>
+  <Contact/>
+  <Faqs/> 
+   <Footer/> 
 </>
 
   // <BrowserRouter>
