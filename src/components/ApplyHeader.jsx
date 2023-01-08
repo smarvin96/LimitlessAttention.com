@@ -1,10 +1,7 @@
-const Header = () => {
+const ApplyHeader = () => {
     return ( <>
-
     
     
-{/* transition-all duration-200 ease-in-out */}
-
 <nav class="  header-nav fixed w-full z-40 bg-white  sm:px-4  dark:bg-gray-900 border-b border-gray-200 dark:border-gray-600 shadow-lg">
   <div class="container flex flex-wrap items-center justify-between mx-auto">
   <a href="https://flowbite.com/" class="flex items-center">
@@ -43,10 +40,7 @@ const Header = () => {
 </nav>
 
 
-
-	
-
     </> );
 }
  
-export default Header;
+export default ApplyHeader;

@@ -19,14 +19,14 @@ const App = () => {
 
 
 
-  {/* <Apply/>  */}
-   <Header/>
-   <Hero/>
-  <Benefits/>
-  <Testimonials/>
-  <Contact/>
-  <Faqs/> 
-   <Footer/> 
+  <Apply/> 
+   {/* <Header/> */}
+   {/* <Hero/> */}
+  {/* <Benefits/> */}
+  {/* <Testimonials/> */}
+  {/* <Contact/> */}
+  {/* <Faqs/>  */}
+   {/* <Footer/>  */}
 </>
 
   // <BrowserRouter>

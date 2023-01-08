@@ -1,8 +1,12 @@
+import ApplyHeader from "./ApplyHeader";
+
 const Apply = () => {
   return (
     <>
 
-<div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6" id="contact">
+    <ApplyHeader/>
+
+<div class="py-24 border px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6" id="contact">
 
       
 <h1 class=" text-center mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">OnlyFans Management Application</h1>
