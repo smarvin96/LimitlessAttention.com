@@ -125,11 +125,11 @@ const Footer = () => {
             </div>
 
             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-              © 2023
-              <a href="https://flowbite.com" class="hover:underline">
-                onlyfanserfolg.de™
+              © 2023 
+              <a href="https://flowbite.com" class="hover:underline pl-2">
+                limitlessattention.com™
               </a>
-              . All Rights Reserved.
+              <div> All Rights Reserved.</div>
             </span>
             <div></div>
 
