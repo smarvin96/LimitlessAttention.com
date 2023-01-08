@@ -17,7 +17,7 @@ const Apply = () => {
 <form>
   <div class="mb-6">
   <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name *</label>
-    <input type="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="What should we call you?"/>
+    <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="What should we call you?"/>
     </div>
 
 
@@ -26,26 +26,26 @@ const Apply = () => {
 
 
     <div class="mb-6">
-  <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">How can we reach you the best? *</label>
-    <input type="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Instagram/Telegram/WhatsApp/Email"required/>
+  <label for="reach" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">How can we reach you the best? *</label>
+    <input type="text" id="reach" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Instagram/Telegram/WhatsApp/Email"required/>
     </div>
 
 <div class="mb-6">
-  <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Link to social media *</label>
-    <input type="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="What should we call you?"/>
+  <label for="sm" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Link to social media *</label>
+    <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="What should we call you?"/>
     </div>
 
  
 
     <div class="mb-6">
-  <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Where are you from? *</label>
-    <input type="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Location"required/>
+  <label for="location" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Where are you from? *</label>
+    <input type="text" id="location" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Location"required/>
     </div>
 
 
 
     <div class="mb-6">
-    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Which languages can you speak?</label>
+    <label for="language" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Which languages can you speak?</label>
     <div class="flex items-center mb-4">
     <input id="language" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
     <label for="language" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">English</label>
@@ -64,13 +64,13 @@ const Apply = () => {
 <div class="mb-6">
     <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Do you have a partner/husband/boyfriend, who is giving you advice</label>
     <div class="flex items-center mb-4">
-    <input id="language" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-    <label for="language" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+    <input id="partner" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+    <label for="partner" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
 </div>
 
 <div class="flex items-center mb-4">
-    <input id="language" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-    <label for="language" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+    <input id="partner" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+    <label for="partner" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
 </div>
 
 </div>
@@ -78,17 +78,17 @@ const Apply = () => {
 <div class="mb-6">
     <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Do you bring your own social media accounts, or should we create some for you?</label>
     <div class="flex items-center mb-4">
-    <input id="language" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-    <label for="language" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+    <input id="bringSocialMedia" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+    <label for="bringSocialMedia" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
 </div>
 
 <div class="flex items-center mb-4">
-    <input id="language" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-    <label for="language" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+    <input id="bringSocialMedia" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+    <label for="bringSocialMedia" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
 </div>
 <div class="flex items-center mb-4">
-    <input id="language" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-    <label for="language" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Some</label>
+    <input id="bringSocialMedia" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+    <label for="bringSocialMedia" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Some</label>
 </div>
 
 <br/>
@@ -100,35 +100,35 @@ const Apply = () => {
 <div class="mb-6">
     <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Do you have already a verified OnlyFans / Fansly / DarkFans/ something else? *</label>
     <div class="flex items-center mb-4">
-    <input id="language" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-    <label for="language" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+    <input id="verified" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+    <label for="verified" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
 </div>
 
 <div class="flex items-center mb-4">
-    <input id="language" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-    <label for="language" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+    <input id="verified" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+    <label for="verified" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
 </div>
 
 </div>
 
 <div class="mb-6">
-  <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Which countries do you want blocked from OnlyFans?</label>
-    <input type="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder=""/>
+  <label for="blockedCountries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Which countries do you want blocked from OnlyFans?</label>
+    <input type="text" id="blockedCountries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder=""/>
     </div>
 
     <div class="mb-6">
-  <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">How many hours do you have available per day?</label>
-    <input type="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="e.g., 6"/>
+  <label for="hoursDayAvailable" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">How many hours do you have available per day?</label>
+    <input type="number" id="hoursDayAvailable" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="e.g., 6"/>
     </div>
 
     <div class="mb-6">
-  <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">How many Videos/Pictures/TikToks can you create in one Week?</label>
-    <input type="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="e.g., 23"/>
+  <label for="weekContent" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">How many Videos/Pictures/TikToks can you create in one Week?</label>
+    <input type="number" id="weekContent" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="e.g., 23"/>
     </div>
 
     <div class="mb-6">
-  <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">On a normal day, how long will it take until you can create a regular upsell for a customer?</label>
-    <input type="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder=""/>
+  <label for="upsellTime" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">On a normal day, how long will it take until you can create a regular upsell for a customer?</label>
+    <input type="number" id="upsellTime" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder=""/>
     </div>
 
     <div class="mb-6">
@@ -139,8 +139,8 @@ const Apply = () => {
 </div>
 
 <div class="flex items-center mb-4">
-    <input id="language" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-    <label for="language" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I'd like help</label>
+    <input id="advice" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+    <label for="advice" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I'd like help</label>
 </div>
 
 </div>
