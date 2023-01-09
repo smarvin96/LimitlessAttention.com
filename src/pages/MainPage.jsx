@@ -1,16 +1,17 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Benefits from "../components/Benefits";
+import Contact from "../components/Contact";
+import Faqs from "../components/Faqs";
+import Hero from "../components/Hero";
+import Testimonials from "../components/Testimonials";
 
 const MainPage = () => {
   return (
     <>
-      <Header />
       <Hero />
       <Benefits />
       <Testimonials />
       <Contact />
       <Faqs />
-      <Footer />
     </>
   );
 };

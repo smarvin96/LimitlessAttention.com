@@ -1,11 +1,10 @@
-import Header from "../components/Header"
+import Faqs from "../components/Faqs";
 
 const NotFoundPage = () => {
   return (
     
       <>
-      <Header/>
-      <Footer/>
+      <Faqs/>
       </>
     
   );

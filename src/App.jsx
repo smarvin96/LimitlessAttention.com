@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Apply from "./components/Apply";
 import Benefits from "./components/Benefits";
 import Contact from "./components/Contact";
@@ -12,37 +12,22 @@ import ApplyPage from "./pages/ApplyPage";
 import MainPage from "./pages/MainPage";
 import routes from "./routes/routes";
 
-
-
 const App = () => {
-  return ( <>
-  
+  return (
+    <>
+      {/* <Apply/>  */}
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          {routes.map((route) => {
+            return <Route key={route.id} {...route} />;
+          })}
+        </Routes>
+       {/* <MainPage/> */}
+        <Footer />
+      </BrowserRouter>
+    </>
+  );
+};
 
-
-
-  {/* <Apply/>  */}
-
-    <Header/>
-   <Hero/>
-  <Benefits/>
-  <Testimonials/>
-  <Contact/>
-  <Faqs/> 
-   <Footer/> 
-</>
-
-  // <BrowserRouter>
-  //       <Routes>
-  //         {routes.map((route)=>{
-  //           return(<Route key={route.id} {...route} />)
-  //         })}
-  //       </Routes>
-  //   </BrowserRouter> 
-    
-
-  
-
- );
-}
- 
 export default App;
