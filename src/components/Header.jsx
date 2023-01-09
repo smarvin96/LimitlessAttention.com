@@ -13,13 +13,19 @@ const Header = () => {
             <img
               src="/src/images/logo.png"
               className="h-6 mr-3 sm:h-9"
-              alt="Flowbite Logo"
+              alt="Limitless Attention Logo"
             />
+
+
+            
             <Link activeClass="active" smooth spy to="hero">
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Limitless Attention
             </span>
             </Link>
+
+
+
           </a>
           <div className="flex md:order-2">
             <button
