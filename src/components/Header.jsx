@@ -21,7 +21,9 @@ const Header = () => {
           </a>
           <div className="flex md:order-2">
             <button
-              onClick={() => navigate(location.pathname === "/apply" ? "/" : "/apply")}
+              onClick={() =>
+                navigate(location.pathname === "/apply" ? "/" : "/apply")
+              }
               type="button"
               className=" text-lg  text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
             >
