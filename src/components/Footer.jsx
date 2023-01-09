@@ -9,7 +9,7 @@ const Footer = () => {
             <button
               data-modal-target="footerModal"
               data-modal-toggle="defaultModal"
-              className="block text-white bg-purple-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="block text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
               type="button"
             >
               Imprint
@@ -126,7 +126,7 @@ const Footer = () => {
 
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
               © 2023 
-              <a href="https://flowbite.com" className="hover:underline pl-2">
+              <a href="https://www.instagram.com/limitlessattention/" target="_blank"className="hover:underline pl-2">
                 limitlessattention.com™
               </a>
               <div> All Rights Reserved.</div>
@@ -135,7 +135,7 @@ const Footer = () => {
 
             <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
               <a
-                href="#"
+                href="https://www.instagram.com/limitlessattention/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-gray-900 dark:hover:text-white"

@@ -1,4 +1,11 @@
+import { useNavigate, useLocation } from "react-router-dom";
+
+
 const Hero = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+
   return (
     <>
       <section className="bg-white dark:bg-gray-900 py-8">
@@ -17,6 +24,7 @@ const Hero = () => {
               className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-dark rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
             >
               <button
+                onClick= {() => navigate(location.pathname = "/apply")}
                 type="button"
                 className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
               >
