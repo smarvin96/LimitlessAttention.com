@@ -1,13 +1,20 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { Link } from "react-scroll";
+import useMediaQuery from "../custom_hooks/useMediaQuery";
 
 const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  const smallView = useMediaQuery("(max-width:460px)");
+  console.log(smallView);
+
+  const headerItemFontSize = smallView ? "text-xs" : "text-2xl";
+  const headerButtonFontSize = smallView ? "font-small" : "font-xl";
+
   return (
     <>
-      <nav className="scroll-smooth bg-white px-2 sm:px-2 py-2 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+      <nav className=" scroll-smooth bg-white px-2 sm:px-2 py-2 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <div className="container flex flex-wrap items-center justify-between mx-auto">
           <a
             onClick={() => navigate((location.pathname = "/"))}
@@ -20,7 +27,9 @@ const Header = () => {
             />
 
             <Link activeClass="active" smooth spy to="hero">
-              <span className="self-center text-2xl   font-semibold whitespace-nowrap dark:text-white">
+              <span
+                className={`${headerItemFontSize} self-center   font-semibold whitespace-nowrap dark:text-white`}
+              >
                 Limitless Attention
               </span>
             </Link>
@@ -31,7 +40,7 @@ const Header = () => {
                 navigate(location.pathname === "/apply" ? "/" : "/apply")
               }
               type="button"
-              className=" text-lg  text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
+              className={`${headerItemFontSize} ${headerButtonFontSize} text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300  rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800`}
             >
               {location.pathname === "/apply" ? "Back to Home" : "Apply Now"}
             </button>

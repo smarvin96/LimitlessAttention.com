@@ -73,7 +73,7 @@ const Footer = () => {
                       Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect;
                       27 a Umsatzsteuergesetz:
                       <br />
-                      wurde beantragt
+                      beantragt.
                     </p>
 
                     <br />

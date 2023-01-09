@@ -19,7 +19,7 @@ const Apply = () => {
           afraid of work.
         </p>
 
-        <form>
+        <form id="applyForm">
           <div className="mb-6">
             <label
               htmlFor="name"
@@ -60,9 +60,9 @@ const Apply = () => {
             </label>
             <input
               type="text"
-              id="name"
+              id="sm"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="What should we call you?"
+              placeholder=""
             />
           </div>
 
@@ -174,7 +174,7 @@ const Apply = () => {
           <br />
           <div className="mb-6">
             <label
-              htmlFor="name"
+              htmlFor="bringSocialMedia"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
               Do you bring your own social media accounts, or should we create
@@ -229,7 +229,7 @@ const Apply = () => {
 
           <div className="mb-6">
             <label
-              htmlFor="name"
+              htmlFor="verified"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
               Do you have already a verified OnlyFans / Fansly / DarkFans/
@@ -323,13 +323,13 @@ const Apply = () => {
               type="number"
               id="upsellTime"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder=""
+              placeholder="number in hours"
             />
           </div>
 
           <div className="mb-6">
             <label
-              htmlFor="name"
+              htmlFor="contentPlan"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
               Can you create content on your own, or should we provide you a
@@ -337,13 +337,13 @@ const Apply = () => {
             </label>
             <div className="flex items-center mb-4">
               <input
-                id="language"
+                id="contentPlan"
                 type="checkbox"
                 value=""
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
-                htmlFor="language"
+                htmlFor="contentPlan"
                 className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 I can come up with content ideas on my own
@@ -352,13 +352,13 @@ const Apply = () => {
 
             <div className="flex items-center mb-4">
               <input
-                id="advice"
+                id="contentPlans"
                 type="checkbox"
                 value=""
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
-                htmlFor="advice"
+                htmlFor="contentPlan"
                 className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 I'd like help
