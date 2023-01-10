@@ -35,7 +35,13 @@ const Apply = () => {
       upsellTime: upsellTime,
       contentPlan: contentPlan,
       message: message,
-    });
+    })
+    .then(() => {
+      alert("Apply has been submitted")
+    })
+    .catch(error => {
+      alert(error.message);
+    })
   };
 
   return (
