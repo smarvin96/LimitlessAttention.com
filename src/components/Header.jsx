@@ -6,11 +6,15 @@ const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const smallView = useMediaQuery("(max-width:460px)");
-  console.log(smallView);
+  // const miniView = useMediaQuery("(max-width:360px)");
+  const smallView = useMediaQuery("(max-width:490px)");
+  // const mediumView = useMediaQuery("(max-width:1025px)");
 
-  const headerItemFontSize = smallView ? "text-xs" : "text-2xl";
-  const headerButtonFontSize = smallView ? "font-small" : "font-xl";
+
+  const headerItemFontSize = smallView ? "text-xl" : "text-2xl";
+
+
+  const headerButtonFontSize = smallView ? "font-xl" : "font-2xl";
 
   return (
     <>

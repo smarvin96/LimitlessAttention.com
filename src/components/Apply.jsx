@@ -1,18 +1,7 @@
 import { useState } from "react";
-// import {database} from '../firebase'
-// import {ref,push,child,update} from "firebase/database";
-// import { db } from "../firebase";
-// import {doc, getDoc} from "firebase/firestore"
-// import {useEffect} from "react";
-
 
 const Apply = () => {
 
-// useEffect(async() => {
-//   const docRef = doc(db, "applys", "49Te0Yg86C7W2H8vElE6");
-//   const docSnap=await getDoc(docRef)
-//   console.log(docSnap.data())
-// })
 
 
   const [name, setName] = useState("");
