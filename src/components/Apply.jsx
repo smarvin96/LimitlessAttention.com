@@ -17,6 +17,27 @@ const Apply = () => {
   const [contentPlan, setContentPlan] = useState("");
   const [message, setMessage] = useState("");
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    db.collection("applys").add({
+      name: name,
+      reach: reach,
+      sm: sm,
+      location: location,
+      language: language,
+      partner: partner,
+      bringSocialMedia: bringSocialMedia,
+      verified: verified,
+      blockedCountries: blockedCountries,
+      hoursDayAvailable: hoursDayAvailable,
+      weekContent: weekContent,
+      upsellTime: upsellTime,
+      contentPlan: contentPlan,
+      message: message,
+    });
+  };
+
   return (
     <>
       <div
@@ -33,7 +54,7 @@ const Apply = () => {
           afraid of work.
         </p>
 
-        <form id="applyForm">
+        <form id="applyForm" onSubmit={handleSubmit}>
           <div className="mb-6">
             <label
               htmlFor="name"
@@ -101,7 +122,6 @@ const Apply = () => {
               required
               value={location}
               onChange={(e) => setLocation(e.target.value)}
-              
             />
           </div>
 
@@ -118,7 +138,7 @@ const Apply = () => {
                 type="checkbox"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 value={language}
-              onChange={(e) => setLanguage(e.target.value)}
+                onChange={(e) => setLanguage(e.target.value)}
               />
               <label
                 htmlFor="language"
@@ -134,7 +154,7 @@ const Apply = () => {
                 type="checkbox"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 value={language}
-              onChange={(e) => setLanguage(e.target.value)}
+                onChange={(e) => setLanguage(e.target.value)}
               />
               <label
                 htmlFor="language"
@@ -149,7 +169,7 @@ const Apply = () => {
                 type="checkbox"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 value={language}
-              onChange={(e) => setLanguage(e.target.value)}
+                onChange={(e) => setLanguage(e.target.value)}
               />
               <label
                 htmlFor="language"
@@ -173,7 +193,7 @@ const Apply = () => {
                 type="checkbox"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 value={language}
-              onChange={(e) => setLanguage(e.target.value)}
+                onChange={(e) => setLanguage(e.target.value)}
               />
               <label
                 htmlFor="partner"
@@ -188,7 +208,7 @@ const Apply = () => {
                 id="partner"
                 type="checkbox"
                 value={partner}
-              onChange={(e) => setPartner(e.target.value)}
+                onChange={(e) => setPartner(e.target.value)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
@@ -213,7 +233,7 @@ const Apply = () => {
                 id="bringSocialMedia"
                 type="checkbox"
                 value={bringSocialMedia}
-              onChange={(e) => setBringSocialMedia(e.target.value)}
+                onChange={(e) => setBringSocialMedia(e.target.value)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
@@ -229,7 +249,7 @@ const Apply = () => {
                 id="bringSocialMedia"
                 type="checkbox"
                 value={bringSocialMedia}
-              onChange={(e) => setBringSocialMedia(e.target.value)}
+                onChange={(e) => setBringSocialMedia(e.target.value)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
@@ -244,7 +264,7 @@ const Apply = () => {
                 id="bringSocialMedia"
                 type="checkbox"
                 value={bringSocialMedia}
-              onChange={(e) => setBringSocialMedia(e.target.value)}
+                onChange={(e) => setBringSocialMedia(e.target.value)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
@@ -271,7 +291,7 @@ const Apply = () => {
                 id="verified"
                 type="checkbox"
                 value={verified}
-              onChange={(e) => setVerified(e.target.value)}
+                onChange={(e) => setVerified(e.target.value)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
@@ -287,7 +307,7 @@ const Apply = () => {
                 id="verified"
                 type="checkbox"
                 value={verified}
-              onChange={(e) => setVerified(e.target.value)}
+                onChange={(e) => setVerified(e.target.value)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
@@ -381,7 +401,7 @@ const Apply = () => {
                 id="contentPlan"
                 type="checkbox"
                 value={contentPlan}
-              onChange={(e) => setContentPlan(e.target.value)}
+                onChange={(e) => setContentPlan(e.target.value)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
@@ -397,7 +417,7 @@ const Apply = () => {
                 id="contentPlan"
                 type="checkbox"
                 value={contentPlan}
-              onChange={(e) => setContentPlan(e.target.value)}
+                onChange={(e) => setContentPlan(e.target.value)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
@@ -421,7 +441,7 @@ const Apply = () => {
             className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder=""
             value={message}
-              onChange={(e) => setMessage(e.target.value)}
+            onChange={(e) => setMessage(e.target.value)}
           ></textarea>
 
           <div className="mt-3 text-center">
