@@ -1,31 +1,21 @@
-
 import { useState } from "react";
 import { db } from "../firebase";
 
 const Apply = () => {
-
-const [name, setName] = useState("");
-const [reach, setReach] = useState("");
-const [sm, setSm] = useState("");
-const [location, setLocation] = useState("");
-const [language, setLanguage] = useState("");
-const [partner, setPartner] = useState("");
-const [bringSocialMedia, setBringSocialMedia] = useState("");
-const [verified, setVerified] = useState("");
-const [blockedCountries, setBlockedCountries] = useState("");
-const [hoursDayAvailable, setHoursDayAvailable] = useState("");
-const [weekContent, setWeekContent] = useState("");
-const [upsellTime, setUpsellTime] = useState("");
-const [contentPlan, setContentPlan] = useState("");
-const [message, setMessage] = useState("");
-
-
-
-
-
-
-
-
+  const [name, setName] = useState("");
+  const [reach, setReach] = useState("");
+  const [sm, setSm] = useState("");
+  const [location, setLocation] = useState("");
+  const [language, setLanguage] = useState("");
+  const [partner, setPartner] = useState("");
+  const [bringSocialMedia, setBringSocialMedia] = useState("");
+  const [verified, setVerified] = useState("");
+  const [blockedCountries, setBlockedCountries] = useState("");
+  const [hoursDayAvailable, setHoursDayAvailable] = useState("");
+  const [weekContent, setWeekContent] = useState("");
+  const [upsellTime, setUpsellTime] = useState("");
+  const [contentPlan, setContentPlan] = useState("");
+  const [message, setMessage] = useState("");
 
   return (
     <>
@@ -56,6 +46,8 @@ const [message, setMessage] = useState("");
               id="name"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="What should we call you?"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
           </div>
 
