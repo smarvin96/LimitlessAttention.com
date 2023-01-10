@@ -17,8 +17,11 @@ const Apply = () => {
   const [contentPlan, setContentPlan] = useState("");
   const [message, setMessage] = useState("");
 
+  const [loader, setLoader] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoader(true)
 
     db.collection("applys")
       .add({
@@ -39,9 +42,11 @@ const Apply = () => {
       })
       .then(() => {
         alert("Apply has been submitted");
+        setLoader(false);
       })
       .catch((error) => {
         alert(error.message);
+        setLoader(false);
       });
 
     setName("");
@@ -469,6 +474,7 @@ const Apply = () => {
 
           <div className="mt-3 text-center">
             <button
+            style={{background: loader ? "#green" : "#orange"}}
               type="submit"
               className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-base px-6 py-3.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
             >

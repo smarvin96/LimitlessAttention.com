@@ -1,10 +1,8 @@
 import firebase from "firebase";
 
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 
 
-const firebaseApp = firebase.initializeAp({
+const firebaseApp = firebase.initializeApp({
  
   apiKey: "AIzaSyAv5d3NoaGCGuxS-dxf3WvRj3JjJlbSSQ8",
   authDomain: "limitlessattention.firebaseapp.com",
