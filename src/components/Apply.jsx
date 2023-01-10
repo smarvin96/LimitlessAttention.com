@@ -20,28 +20,45 @@ const Apply = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    db.collection("applys").add({
-      name: name,
-      reach: reach,
-      sm: sm,
-      location: location,
-      language: language,
-      partner: partner,
-      bringSocialMedia: bringSocialMedia,
-      verified: verified,
-      blockedCountries: blockedCountries,
-      hoursDayAvailable: hoursDayAvailable,
-      weekContent: weekContent,
-      upsellTime: upsellTime,
-      contentPlan: contentPlan,
-      message: message,
-    })
-    .then(() => {
-      alert("Apply has been submitted")
-    })
-    .catch(error => {
-      alert(error.message);
-    })
+    db.collection("applys")
+      .add({
+        name: name,
+        reach: reach,
+        sm: sm,
+        location: location,
+        language: language,
+        partner: partner,
+        bringSocialMedia: bringSocialMedia,
+        verified: verified,
+        blockedCountries: blockedCountries,
+        hoursDayAvailable: hoursDayAvailable,
+        weekContent: weekContent,
+        upsellTime: upsellTime,
+        contentPlan: contentPlan,
+        message: message,
+      })
+      .then(() => {
+        alert("Apply has been submitted");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+
+    setName("");
+    setReach("");
+    setSm("");
+    useState("");
+    setLocation("");
+    setLanguage("");
+    setPartner("");
+    setBringSocialMedia("");
+    setVerified("");
+    setBlockedCountries("");
+    setHoursDayAvailable("");
+    setWeekContent("");
+    setUpsellTime("");
+    setContentPlan("");
+    setMessage("");
   };
 
   return (
