@@ -6,11 +6,12 @@ const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  // Neue Datei mit Querys
   // const miniView = useMediaQuery("(max-width:360px)");
   const smallView = useMediaQuery("(max-width:490px)");
   // const mediumView = useMediaQuery("(max-width:1025px)");
 
-
+// const headerItemFontSizeMini = miniView ? "text-xs" : "text-sm";
   const headerItemFontSize = smallView ? "text-xl" : "text-2xl";
 
 
