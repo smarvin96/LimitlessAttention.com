@@ -1,7 +1,31 @@
 
-
+import { useState } from "react";
+import { db } from "../firebase";
 
 const Apply = () => {
+
+const [name, setName] = useState("");
+const [reach, setReach] = useState("");
+const [sm, setSm] = useState("");
+const [location, setLocation] = useState("");
+const [language, setLanguage] = useState("");
+const [partner, setPartner] = useState("");
+const [bringSocialMedia, setBringSocialMedia] = useState("");
+const [verified, setVerified] = useState("");
+const [blockedCountries, setBlockedCountries] = useState("");
+const [hoursDayAvailable, setHoursDayAvailable] = useState("");
+const [weekContent, setWeekContent] = useState("");
+const [upsellTime, setUpsellTime] = useState("");
+const [contentPlan, setContentPlan] = useState("");
+const [message, setMessage] = useState("");
+
+
+
+
+
+
+
+
 
   return (
     <>
@@ -136,7 +160,7 @@ const Apply = () => {
           <br />
           <div className="mb-6">
             <label
-              htmlFor="name"
+              htmlFor="partner"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
               Do you have a partner/husband/boyfriend, who is giving you advice
@@ -352,7 +376,7 @@ const Apply = () => {
 
             <div className="flex items-center mb-4">
               <input
-                id="contentPlans"
+                id="contentPlan"
                 type="checkbox"
                 value=""
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
