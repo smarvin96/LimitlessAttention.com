@@ -12,7 +12,7 @@ const Benefits = () => {
               in to the highest earners on Onlyfans 🚀
             </p>
           </div>
-          <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+          <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 mt-5">
             <div id="benefits:skyrocket">
               <div className="border flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-300 lg:h-12 lg:w-12">
                 <svg
@@ -39,7 +39,7 @@ const Benefits = () => {
                 <br /> We make a plan, then execute to ensure maximum growth.
               </p>
             </div>
-            <div id="benefits:focus">
+            <div id="benefits:focus" className="pt-6">
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full  bg-purple-300  lg:h-12 lg:w-12 ">
                 <svg
                   className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
@@ -65,10 +65,10 @@ const Benefits = () => {
                 with us.
               </p>
             </div>
-            <div id="benefits:no-more-chatting">
+            <div id="benefits:no-more-chatting" className="pt-6">
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-300  lg:h-12 lg:w-12 ">
                 <svg
-                  className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                  className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6"
                   fill="purple"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@ const Benefits = () => {
                 profitably.
               </p>
             </div>
-            <div id="benefits:privacy">
+            <div id="benefits:privacy" className="pt-6">
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-300  lg:h-12 lg:w-12 ">
                 <svg
                   className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
@@ -114,7 +114,7 @@ const Benefits = () => {
                 plagiarists.
               </p>
             </div>
-            <div id="benefits:reclaim-time">
+            <div id="benefits:reclaim-time" className="pt-6">
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-300  lg:h-12 lg:w-12 ">
                 <svg
                   className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
@@ -140,7 +140,7 @@ const Benefits = () => {
                 all.
               </p>
             </div>
-            <div id="benefits:professionals">
+            <div id="benefits:professionals" className="pt-6">
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-300  lg:h-12 lg:w-12 ">
                 <svg
                   className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
