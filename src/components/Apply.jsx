@@ -477,11 +477,11 @@ const Apply = () => {
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
 
-          <div className="mt-3 text-center">
+          <div className="mt-3 pt-5 text-center">
             <button
             style={{background: loader ? "#green" : "#orange"}}
               type="submit"
-              className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-base px-6 py-3.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
+              className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-2xl px-6 py-3.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
             >
               Submit Survey
             </button>
