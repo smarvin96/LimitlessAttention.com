@@ -7,15 +7,15 @@ const Header = () => {
   const navigate = useNavigate();
 
   // Neue Datei mit Querys
-  const miniView = useMediaQuery("(max-width:360px)");
-  const smallView = useMediaQuery("(max-width:490px)");
+  
+  const miniView = useMediaQuery("(max-width:490px)");
   // const mediumView = useMediaQuery("(max-width:1025px)");
 
 // const headerItemFontSizeMini = miniView ? "text-xs" : "text-sm";
-  const headerItemFontSize = smallView || miniView ? "text-xl" : "text-2xl";
+  const headerItemFontSize = miniView ? "text-ls" : "text-2xl";
+  const headerButtonFontSize = miniView  ? "font-sm" : "font-2xl";
 
-
-  const headerButtonFontSize = smallView || miniView ? "font-sm" : "font-2xl";
+  // 360 text-ls font-sm
 
   return (
     <>
