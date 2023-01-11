@@ -19,10 +19,7 @@ const Hero = () => {
               everything else.
             </p>
 
-            <a
-              href="#"
-              className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-dark rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-            >
+            
               <button
                 onClick= {() => navigate(location.pathname = "/apply")}
                 type="button"
@@ -30,7 +27,7 @@ const Hero = () => {
               >
                 Apply Form
               </button>
-            </a>
+            
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <img src="/src/images/girl_beach.jpg" alt="girl on beach" />
