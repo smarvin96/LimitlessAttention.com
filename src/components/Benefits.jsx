@@ -13,7 +13,7 @@ const Benefits = () => {
             </p>
           </div>
           <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 mt-5">
-            <div id="benefits:skyrocket">
+            <div id="benefits:skyrocket" className="pt-6">
               <div className="border flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-purple-300 lg:h-12 lg:w-12">
                 <svg
                   className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
