@@ -12,7 +12,7 @@ const Header = () => {
   // const mediumView = useMediaQuery("(max-width:1025px)");
 
 // const headerItemFontSizeMini = miniView ? "text-xs" : "text-sm";
-  const headerItemFontSize = miniView ? "text-ls" : "text-2xl";
+  const headerItemFontSize = miniView ? "text-base" : "text-2xl";
   const headerButtonFontSize = miniView  ? "font-sm" : "font-2xl";
 
   // 360 text-ls font-sm
