@@ -28,7 +28,7 @@ const Footer = () => {
                   {/* <!-- Modal header --> */}
                   <div className="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                      Angaben gem&auml;&szlig; &sect; 5 TMG
+                      Imprint - Limitless Attention
                     </h3>
                     <button
                       type="button"
@@ -53,6 +53,7 @@ const Footer = () => {
                   </div>
                   {/* <!-- Modal body --> */}
                   <div className="p-6 space-y-6">
+                  <h2>Owner</h2>
                     <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                       Marvin Sprenger
                       <br />
@@ -61,26 +62,25 @@ const Footer = () => {
                       33129 Delbr&uuml;ck
                     </p>
 
-                    <h2>Kontakt</h2>
+                    <h2>Contact</h2>
                     <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                      Telefon: +49 1577 3602652
+                      Phone: +49 1577 3602652
                       <br />
                       E-Mail: sprenger-marvin@outlook.de
                     </p>
 
-                    <h2>Umsatzsteuer-ID</h2>
+                    {/* <h2>Umsatzsteuer-ID</h2>
                     <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                       Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect;
                       27 a Umsatzsteuergesetz:
                       <br />
                       beantragt.
-                    </p>
+                    </p> */}
 
                     <br />
-                    <h2>EU-Streitschlichtung</h2>
+                    <h2>EU Dispute Resolution</h2>
                     <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                      Die Europ&auml;ische Kommission stellt eine Plattform zur
-                      Online-Streitbeilegung (OS) bereit:
+                    The European Commission provides a platform for online dispute resolution (OS): <br/>
                       <a
                         href="https://ec.europa.eu/consumers/odr/"
                         target="_blank"
@@ -88,10 +88,10 @@ const Footer = () => {
                       >
                         https://ec.europa.eu/consumers/odr/
                       </a>
-                      <br /> Unsere E-Mail-Adresse finden Sie oben im Impressum.
+                      <br /> You can find our e-mail address in the imprint above.
                     </p>
 
-                    <h2>
+                    {/* <h2>
                       Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle
                     </h2>
                     <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
@@ -108,7 +108,7 @@ const Footer = () => {
                         https://www.verbraucher-schlichter.de
                       </a>
                       ).
-                    </p>
+                    </p> */}
                   </div>
                   {/* <!-- Modal footer --> */}
                   <div className="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
