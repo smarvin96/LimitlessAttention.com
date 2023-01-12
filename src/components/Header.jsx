@@ -1,7 +1,7 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { Link } from "react-scroll";
 import useMediaQuery from "../custom_hooks/useMediaQuery";
-
+import logo from "../images/logo.png"
 const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -26,7 +26,7 @@ const Header = () => {
             className="flex items-center cursor-pointer"
           >
             <img
-              src="/src/images/logo.png"
+              src={logo}
               className="h-6 mr-3 sm:h-9"
               alt="Limitless Attention Logo"
             />

@@ -1,5 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom";
-
+import girlBeach from "../images/girl_beach.jpg";
+import t1 from "../images/t1.jpeg";
 
 const Hero = () => {
   const location = useLocation();
@@ -30,7 +31,7 @@ const Hero = () => {
             
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="/src/images/girl_beach.jpg" alt="girl on beach" />
+            <img src={girlBeach} alt="girl on beach" />
             <div className="relative py-5 m-5 ">
               <div className="hidden md:block absolute w-20  top-20 p-2 bg-pink-200 rounded-lg bg-opacity-70">
                 <img
@@ -38,7 +39,7 @@ const Hero = () => {
                   alt="profile picture"
                   width="36"
                   height="36"
-                  src="/src/images/t1.jpeg"
+                  src={t1}
                   loading="lazy"
                   decoding="async"
                 />
