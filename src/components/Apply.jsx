@@ -1,12 +1,11 @@
 import { useState } from "react";
 
-
 const Apply = () => {
   const [name, setName] = useState("");
   const [reach, setReach] = useState("");
   const [sm, setSm] = useState("");
   const [location, setLocation] = useState("");
-  const [language, setLanguage] = useState("");
+  const [language, setLanguage] = useState("English");
   const [partner, setPartner] = useState("");
   const [bringSocialMedia, setBringSocialMedia] = useState("");
   const [verified, setVerified] = useState("");
@@ -24,14 +23,14 @@ const Apply = () => {
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
 
-    // let data = {
-    //   name: name,
-    // };
-    // try {
-    //   addDoc(fbName, data);
-    // } catch (e) {
-    //   console.log(e);
-    // }
+  // let data = {
+  //   name: name,
+  // };
+  // try {
+  //   addDoc(fbName, data);
+  // } catch (e) {
+  //   console.log(e);
+  // }
 
   //   setName("");
   //   setReach("");
@@ -65,7 +64,11 @@ const Apply = () => {
           afraid of work.
         </p>
         {/* onSubmit={handleSubmit} */}
-        <form id="applyForm" action="https://formspree.io/f/mdovorpg" method="POST" >
+        <form
+          id="applyForm"
+          action="https://formspree.io/f/mdovorpg"
+          method="POST"
+        >
           <div className="mb-6">
             <label
               htmlFor="name"
@@ -150,15 +153,16 @@ const Apply = () => {
             </label>
             <div className="flex items-center mb-4">
               <input
-                id="language"
-                name="language"
+                id="languageEnglish"
+                checked
+                name="languageEnglish"
                 type="checkbox"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                value={language}
-                onChange={(e) => setLanguage(e.target.value)}
+                value="yes"
+                onChange={(e) => {setLanguage(e.target.value);console.log(e)}}
               />
               <label
-                htmlFor="language"
+                htmlFor="languageEnglish"
                 className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 English
@@ -167,15 +171,16 @@ const Apply = () => {
 
             <div className="flex items-center mb-4">
               <input
-                id="language"
-                name="language"
+                id="languageGerman"
+                
+                name="languageGerman"
                 type="checkbox"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 value={language}
                 onChange={(e) => setLanguage(e.target.value)}
               />
               <label
-                htmlFor="language"
+                htmlFor="languageGerman"
                 className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 German
@@ -183,15 +188,15 @@ const Apply = () => {
             </div>
             <div className="flex items-center mb-4">
               <input
-                id="language"
-                name="language"
+                id="languageOther"
+                name="languageOther"
                 type="checkbox"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 value={language}
                 onChange={(e) => setLanguage(e.target.value)}
               />
               <label
-                htmlFor="language"
+                htmlFor="languageOther"
                 className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 Other
@@ -270,7 +275,6 @@ const Apply = () => {
               <input
                 id="bringSocialMedia"
                 name="bringSocialMedia"
-
                 type="checkbox"
                 value={bringSocialMedia}
                 onChange={(e) => setBringSocialMedia(e.target.value)}
@@ -287,7 +291,6 @@ const Apply = () => {
               <input
                 id="bringSocialMedia"
                 name="bringSocialMedia"
-
                 type="checkbox"
                 value={bringSocialMedia}
                 onChange={(e) => setBringSocialMedia(e.target.value)}
@@ -316,7 +319,6 @@ const Apply = () => {
               <input
                 id="verified"
                 name="verified"
-
                 type="checkbox"
                 value={verified}
                 onChange={(e) => setVerified(e.target.value)}
@@ -334,7 +336,6 @@ const Apply = () => {
               <input
                 id="verified"
                 name="verified"
-
                 type="checkbox"
                 value={verified}
                 onChange={(e) => setVerified(e.target.value)}
@@ -360,7 +361,6 @@ const Apply = () => {
               type="text"
               id="blockedCountries"
               name="blockedCountries"
-
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Germany/UK"
               value={blockedCountries}
@@ -377,10 +377,8 @@ const Apply = () => {
             </label>
             <input
               type="number"
-              
               id="hoursDayAvailable"
               name="hoursDayAvailable"
-
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="e.g., 6"
               value={hoursDayAvailable}
@@ -399,7 +397,6 @@ const Apply = () => {
               type="number"
               id="weekContent"
               name="weekContent"
-
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="e.g., 23"
               value={weekContent}
@@ -419,7 +416,6 @@ const Apply = () => {
               type="number"
               id="upsellTime"
               name="upsellTime"
-
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="number in hours"
               value={upsellTime}
@@ -439,7 +435,6 @@ const Apply = () => {
               <input
                 id="contentPlan"
                 name="contentPlan"
-
                 type="checkbox"
                 value={contentPlan}
                 onChange={(e) => setContentPlan(e.target.value)}
@@ -457,7 +452,6 @@ const Apply = () => {
               <input
                 id="contentPlan"
                 name="contentPlan"
-
                 type="checkbox"
                 value={contentPlan}
                 onChange={(e) => setContentPlan(e.target.value)}
@@ -481,7 +475,6 @@ const Apply = () => {
           <textarea
             id="message"
             name="message"
-
             rows="4"
             className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder=""
