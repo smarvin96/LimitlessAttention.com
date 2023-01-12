@@ -1,9 +1,7 @@
 import { useState } from "react";
 
+
 const Apply = () => {
-
-
-
   const [name, setName] = useState("");
   const [reach, setReach] = useState("");
   const [sm, setSm] = useState("");
@@ -21,55 +19,35 @@ const Apply = () => {
 
   const [loader, setLoader] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoader(true)
+  // const fbName = collection(firebase, "applys");
 
-    db.collection("applys")
-      .add({
-        name: name,
-        reach: reach,
-        sm: sm,
-        location: location,
-        language: language,
-        partner: partner,
-        bringSocialMedia: bringSocialMedia,
-        verified: verified,
-        blockedCountries: blockedCountries,
-        hoursDayAvailable: hoursDayAvailable,
-        weekContent: weekContent,
-        upsellTime: upsellTime,
-        contentPlan: contentPlan,
-        message: message,
-      })
-      .then(() => {
-        alert("Apply has been submitted");
-        setLoader(false);
-      })
-      .catch((error) => {
-        alert(error.message);
-        setLoader(false);
-      });
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    setName("");
-    setReach("");
-    setSm("");
-    useState("");
-    setLocation("");
-    setLanguage("");
-    setPartner("");
-    setBringSocialMedia("");
-    setVerified("");
-    setBlockedCountries("");
-    setHoursDayAvailable("");
-    setWeekContent("");
-    setUpsellTime("");
-    setContentPlan("");
-    setMessage("");
-  };
+    // let data = {
+    //   name: name,
+    // };
+    // try {
+    //   addDoc(fbName, data);
+    // } catch (e) {
+    //   console.log(e);
+    // }
 
-
-
+  //   setName("");
+  //   setReach("");
+  //   setSm("");
+  //   setLocation("");
+  //   setLanguage("");
+  //   setPartner("");
+  //   setBringSocialMedia("");
+  //   setVerified("");
+  //   setBlockedCountries("");
+  //   setHoursDayAvailable("");
+  //   setWeekContent("");
+  //   setUpsellTime("");
+  //   setContentPlan("");
+  //   setMessage("");
+  // };
 
   return (
     <>
@@ -86,8 +64,8 @@ const Apply = () => {
           intentionally, as we are looking for long-term clients who aren't
           afraid of work.
         </p>
-
-        <form id="applyForm" onSubmit={handleSubmit}>
+        {/* onSubmit={handleSubmit} */}
+        <form id="applyForm" action="https://formspree.io/f/mdovorpg" method="POST" >
           <div className="mb-6">
             <label
               htmlFor="name"
@@ -115,6 +93,7 @@ const Apply = () => {
             <input
               type="text"
               id="reach"
+              name="reach"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Instagram/Telegram/WhatsApp/Email"
               required
@@ -133,8 +112,10 @@ const Apply = () => {
             <input
               type="text"
               id="sm"
+              name="sm"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder=""
+              required
               value={sm}
               onChange={(e) => setSm(e.target.value)}
             />
@@ -150,6 +131,7 @@ const Apply = () => {
             <input
               type="text"
               id="location"
+              name="location"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Location"
               required
@@ -168,6 +150,7 @@ const Apply = () => {
             <div className="flex items-center mb-4">
               <input
                 id="language"
+                name="language"
                 type="checkbox"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 value={language}
@@ -184,6 +167,7 @@ const Apply = () => {
             <div className="flex items-center mb-4">
               <input
                 id="language"
+                name="language"
                 type="checkbox"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 value={language}
@@ -199,6 +183,7 @@ const Apply = () => {
             <div className="flex items-center mb-4">
               <input
                 id="language"
+                name="language"
                 type="checkbox"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 value={language}
@@ -218,11 +203,12 @@ const Apply = () => {
               htmlFor="partner"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
-              Do you have a partner/husband/boyfriend, who is giving you advice
+              Do you have a partner/husband/boyfriend, who is giving you advice?
             </label>
             <div className="flex items-center mb-4">
               <input
                 id="partner"
+                name="partner"
                 type="checkbox"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 value={language}
@@ -239,6 +225,7 @@ const Apply = () => {
             <div className="flex items-center mb-4">
               <input
                 id="partner"
+                name="partner"
                 type="checkbox"
                 value={partner}
                 onChange={(e) => setPartner(e.target.value)}
@@ -264,6 +251,7 @@ const Apply = () => {
             <div className="flex items-center mb-4">
               <input
                 id="bringSocialMedia"
+                name="bringSocialMedia"
                 type="checkbox"
                 value={bringSocialMedia}
                 onChange={(e) => setBringSocialMedia(e.target.value)}
@@ -280,6 +268,8 @@ const Apply = () => {
             <div className="flex items-center mb-4">
               <input
                 id="bringSocialMedia"
+                name="bringSocialMedia"
+
                 type="checkbox"
                 value={bringSocialMedia}
                 onChange={(e) => setBringSocialMedia(e.target.value)}
@@ -295,6 +285,8 @@ const Apply = () => {
             <div className="flex items-center mb-4">
               <input
                 id="bringSocialMedia"
+                name="bringSocialMedia"
+
                 type="checkbox"
                 value={bringSocialMedia}
                 onChange={(e) => setBringSocialMedia(e.target.value)}
@@ -316,14 +308,17 @@ const Apply = () => {
               htmlFor="verified"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
-              Do you have already a verified OnlyFans / Fansly / DarkFans/
-              something else? *
+              Do you already have a verified account on Onlyfans / Fansly /
+              DarkFans or something else? *
             </label>
             <div className="flex items-center mb-4">
               <input
                 id="verified"
+                name="verified"
+
                 type="checkbox"
                 value={verified}
+                required
                 onChange={(e) => setVerified(e.target.value)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
@@ -338,6 +333,8 @@ const Apply = () => {
             <div className="flex items-center mb-4">
               <input
                 id="verified"
+                name="verified"
+
                 type="checkbox"
                 value={verified}
                 onChange={(e) => setVerified(e.target.value)}
@@ -362,6 +359,8 @@ const Apply = () => {
             <input
               type="text"
               id="blockedCountries"
+              name="blockedCountries"
+
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Germany/UK"
               value={blockedCountries}
@@ -378,7 +377,10 @@ const Apply = () => {
             </label>
             <input
               type="number"
+              
               id="hoursDayAvailable"
+              name="hoursDayAvailable"
+
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="e.g., 6"
               value={hoursDayAvailable}
@@ -391,11 +393,13 @@ const Apply = () => {
               htmlFor="weekContent"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
-              How many Videos/Pictures/TikToks can you create in one Week?
+              How many Videos/Pictures/TikToks can you create in one week?
             </label>
             <input
               type="number"
               id="weekContent"
+              name="weekContent"
+
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="e.g., 23"
               value={weekContent}
@@ -414,6 +418,8 @@ const Apply = () => {
             <input
               type="number"
               id="upsellTime"
+              name="upsellTime"
+
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="number in hours"
               value={upsellTime}
@@ -432,6 +438,8 @@ const Apply = () => {
             <div className="flex items-center mb-4">
               <input
                 id="contentPlan"
+                name="contentPlan"
+
                 type="checkbox"
                 value={contentPlan}
                 onChange={(e) => setContentPlan(e.target.value)}
@@ -448,6 +456,8 @@ const Apply = () => {
             <div className="flex items-center mb-4">
               <input
                 id="contentPlan"
+                name="contentPlan"
+
                 type="checkbox"
                 value={contentPlan}
                 onChange={(e) => setContentPlan(e.target.value)}
@@ -470,6 +480,8 @@ const Apply = () => {
           </label>
           <textarea
             id="message"
+            name="message"
+
             rows="4"
             className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder=""
@@ -479,7 +491,7 @@ const Apply = () => {
 
           <div className="mt-3 pt-5 text-center">
             <button
-            style={{background: loader ? "#green" : "#orange"}}
+              style={{ background: loader ? "#green" : "#orange" }}
               type="submit"
               className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-2xl px-6 py-3.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
             >
