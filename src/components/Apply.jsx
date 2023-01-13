@@ -26,10 +26,6 @@ const Apply = () => {
 
   const [message, setMessage] = useState("");
 
-  // const fbName = collection(firebase, "applys");
-
- 
-
   return (
     <>
       <div
