@@ -26,7 +26,9 @@ const Apply = () => {
 
   const [message, setMessage] = useState("");
 
-  const [loader, setLoader] = useState(false);
+  // const fbName = collection(firebase, "applys");
+
+ 
 
   return (
     <>
@@ -43,7 +45,6 @@ const Apply = () => {
           intentionally, as we are looking for long-term clients who aren't
           afraid of work.
         </p>
-        {/* onSubmit={handleSubmit} */}
         <form
           id="applyForm"
           action="https://formspree.io/f/mdovorpg"
@@ -298,7 +299,7 @@ const Apply = () => {
                 id="verified"
                 name="verified"
                 type="checkbox"
-                value={verified}
+                value="yes"
                 onChange={() => setVerified(!verified)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
@@ -315,7 +316,7 @@ const Apply = () => {
                 id="verified"
                 name="verified"
                 type="checkbox"
-                value={verified}
+                value="no"
                 onChange={() => setVerified(!verified)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
@@ -462,7 +463,6 @@ const Apply = () => {
 
           <div className="mt-3 pt-5 text-center">
             <button
-              style={{ background: loader ? "#green" : "#orange" }}
               type="submit"
               className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-2xl px-6 py-3.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
             >
