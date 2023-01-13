@@ -5,20 +5,25 @@ const Apply = () => {
   const [reach, setReach] = useState("");
   const [sm, setSm] = useState("");
   const [location, setLocation] = useState("");
-  
-// Language
+
+  // Language
   const [english, setEnglish] = useState(false);
   const [german, setGerman] = useState(false);
   const [other, setOther] = useState(false);
+  // Partner
+  const [partner, setPartner] = useState(false);
 
-  const [partner, setPartner] = useState("");
-  const [bringSocialMedia, setBringSocialMedia] = useState("");
-  const [verified, setVerified] = useState("");
+  //Bring social media
+  const [bringSocialMedia, setBringSocialMedia] = useState(false);
+  // Verifed Account
+  const [verified, setVerified] = useState(false);
   const [blockedCountries, setBlockedCountries] = useState("");
   const [hoursDayAvailable, setHoursDayAvailable] = useState("");
   const [weekContent, setWeekContent] = useState("");
   const [upsellTime, setUpsellTime] = useState("");
-  const [contentPlan, setContentPlan] = useState("");
+  // Content Plan
+  const [contentPlan, setContentPlan] = useState(false);
+
   const [message, setMessage] = useState("");
 
   const [loader, setLoader] = useState(false);
@@ -189,8 +194,9 @@ const Apply = () => {
                 id="partner"
                 name="partner"
                 type="checkbox"
+                value="yes"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                onChange={(e) => setLanguage(e.target.value)}
+                onChange={() => setPartner(!partner)}
               />
               <label
                 htmlFor="partner"
@@ -204,9 +210,9 @@ const Apply = () => {
               <input
                 id="partner"
                 name="partner"
+                value="no"
                 type="checkbox"
-                value={partner}
-                onChange={(e) => setPartner(e.target.value)}
+                onChange={() => setPartner(!partner)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
@@ -231,8 +237,8 @@ const Apply = () => {
                 id="bringSocialMedia"
                 name="bringSocialMedia"
                 type="checkbox"
-                value={bringSocialMedia}
-                onChange={(e) => setBringSocialMedia(e.target.value)}
+                value="yes"
+                onChange={() => setBringSocialMedia(!bringSocialMedia)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
@@ -248,8 +254,8 @@ const Apply = () => {
                 id="bringSocialMedia"
                 name="bringSocialMedia"
                 type="checkbox"
-                value={bringSocialMedia}
-                onChange={(e) => setBringSocialMedia(e.target.value)}
+                value="no"
+                onChange={() => setBringSocialMedia(!bringSocialMedia)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
@@ -264,8 +270,8 @@ const Apply = () => {
                 id="bringSocialMedia"
                 name="bringSocialMedia"
                 type="checkbox"
-                value={bringSocialMedia}
-                onChange={(e) => setBringSocialMedia(e.target.value)}
+                value="some"
+                onChange={() => setBringSocialMedia(!bringSocialMedia)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
@@ -293,7 +299,7 @@ const Apply = () => {
                 name="verified"
                 type="checkbox"
                 value={verified}
-                onChange={(e) => setVerified(e.target.value)}
+                onChange={() => setVerified(!verified)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
@@ -310,7 +316,7 @@ const Apply = () => {
                 name="verified"
                 type="checkbox"
                 value={verified}
-                onChange={(e) => setVerified(e.target.value)}
+                onChange={() => setVerified(!verified)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
@@ -334,7 +340,7 @@ const Apply = () => {
               id="blockedCountries"
               name="blockedCountries"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Germany/UK"
+              placeholder="none"
               value={blockedCountries}
               onChange={(e) => setBlockedCountries(e.target.value)}
             />
@@ -408,8 +414,8 @@ const Apply = () => {
                 id="contentPlan"
                 name="contentPlan"
                 type="checkbox"
-                value={contentPlan}
-                onChange={(e) => setContentPlan(e.target.value)}
+                value="own plan"
+                onChange={() => setContentPlan(!contentPlan)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
@@ -425,8 +431,8 @@ const Apply = () => {
                 id="contentPlan"
                 name="contentPlan"
                 type="checkbox"
-                value={contentPlan}
-                onChange={(e) => setContentPlan(e.target.value)}
+                value="likes help"
+                onChange={() => setContentPlan(!contentPlan)}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
