@@ -5,7 +5,11 @@ const Apply = () => {
   const [reach, setReach] = useState("");
   const [sm, setSm] = useState("");
   const [location, setLocation] = useState("");
-  const [language, setLanguage] = useState("English");
+// Language
+  const [english, setEnglish] = useState(false);
+  const [german, setGerman] = useState(false);
+  const [other, setOther] = useState(false);
+
   const [partner, setPartner] = useState("");
   const [bringSocialMedia, setBringSocialMedia] = useState("");
   const [verified, setVerified] = useState("");
@@ -17,36 +21,6 @@ const Apply = () => {
   const [message, setMessage] = useState("");
 
   const [loader, setLoader] = useState(false);
-
-  // const fbName = collection(firebase, "applys");
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  // let data = {
-  //   name: name,
-  // };
-  // try {
-  //   addDoc(fbName, data);
-  // } catch (e) {
-  //   console.log(e);
-  // }
-
-  //   setName("");
-  //   setReach("");
-  //   setSm("");
-  //   setLocation("");
-  //   setLanguage("");
-  //   setPartner("");
-  //   setBringSocialMedia("");
-  //   setVerified("");
-  //   setBlockedCountries("");
-  //   setHoursDayAvailable("");
-  //   setWeekContent("");
-  //   setUpsellTime("");
-  //   setContentPlan("");
-  //   setMessage("");
-  // };
 
   return (
     <>
@@ -154,12 +128,11 @@ const Apply = () => {
             <div className="flex items-center mb-4">
               <input
                 id="languageEnglish"
-                checked
                 name="languageEnglish"
                 type="checkbox"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 value="yes"
-                onChange={(e) => {setLanguage(e.target.value);console.log(e)}}
+                onChange={() => setEnglish(!english)}
               />
               <label
                 htmlFor="languageEnglish"
@@ -172,12 +145,11 @@ const Apply = () => {
             <div className="flex items-center mb-4">
               <input
                 id="languageGerman"
-                
                 name="languageGerman"
                 type="checkbox"
+                value="yes"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                value={language}
-                onChange={(e) => setLanguage(e.target.value)}
+                onChange={() => setGerman(!german)}
               />
               <label
                 htmlFor="languageGerman"
@@ -191,9 +163,9 @@ const Apply = () => {
                 id="languageOther"
                 name="languageOther"
                 type="checkbox"
+                value="yes"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                value={language}
-                onChange={(e) => setLanguage(e.target.value)}
+                onChange={() => setOther(!other)}
               />
               <label
                 htmlFor="languageOther"
@@ -217,7 +189,6 @@ const Apply = () => {
                 name="partner"
                 type="checkbox"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                value={language}
                 onChange={(e) => setLanguage(e.target.value)}
               />
               <label

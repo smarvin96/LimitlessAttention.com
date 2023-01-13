@@ -6,7 +6,6 @@ import Testimonials from "../components/Testimonials";
 import { useEffect } from "react";
 
 const MainPage = () => {
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
