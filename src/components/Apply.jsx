@@ -26,6 +26,10 @@ const Apply = () => {
 
   const [message, setMessage] = useState("");
 
+  // Reset Checkbox
+
+
+
   return (
     <>
       <div
