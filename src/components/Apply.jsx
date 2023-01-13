@@ -5,6 +5,7 @@ const Apply = () => {
   const [reach, setReach] = useState("");
   const [sm, setSm] = useState("");
   const [location, setLocation] = useState("");
+  
 // Language
   const [english, setEnglish] = useState(false);
   const [german, setGerman] = useState(false);
