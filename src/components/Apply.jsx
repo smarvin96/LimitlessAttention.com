@@ -98,7 +98,7 @@ const Apply = () => {
               id="sm"
               name="sm"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder=""
+              placeholder="instagram.com/limitlessattention"
               required
               value={sm}
               onChange={(e) => setSm(e.target.value)}
@@ -358,7 +358,7 @@ const Apply = () => {
               id="hoursDayAvailable"
               name="hoursDayAvailable"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="e.g., 6"
+              placeholder="e.g., 6 (number)"
               value={hoursDayAvailable}
               onChange={(e) => setHoursDayAvailable(e.target.value)}
             />
@@ -376,7 +376,7 @@ const Apply = () => {
               id="weekContent"
               name="weekContent"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="e.g., 23"
+              placeholder="e.g., 23 (number)"
               value={weekContent}
               onChange={(e) => setWeekContent(e.target.value)}
             />
