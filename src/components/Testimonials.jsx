@@ -65,7 +65,7 @@ const Testimonials = () => {
                 </h3>
                 <p className="my-4">
                   "Limitless Attention gives me a list of content to film that
-                  day a respects my decisions. They make me feel heard and are
+                  day and respects my decisions. They make me feel heard and are
                   always there if I have any questions.
                 </p>
                 <p className="my-4">
