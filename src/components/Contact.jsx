@@ -12,7 +12,7 @@ const Contact = () => {
           Are you a model who values consistency, and want to work with us?
         </p>
 
-        <form action="https://formspree.io/f/mayzyglj" method="POST">
+        <form action="https://formspree.io/f/xjvdvqpy" method="POST">
           <div className="mb-6">
             <label
               htmlFor="name"

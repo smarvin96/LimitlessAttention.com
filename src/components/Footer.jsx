@@ -60,6 +60,8 @@ const Footer = () => {
                       Wittmundstr. 30
                       <br />
                       33129 Delbr&uuml;ck
+                      <br/>
+                      Germany
                     </p>
 
                     <h2>Contact</h2>
